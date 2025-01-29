@@ -1,3 +1,6 @@
+Esse ;e um fork do https://github.com/Kitware/CMake/tree/master
+aqui voce vai usar path Help/guide/tutorial para fazer o tutorial
+
 CMake
 *****
 
