@@ -8,6 +8,7 @@ if (USE_MYMATH)
   # library that just does sqrt
   add_library(SqrtLibrary STATIC
               mysqrt.cxx
+               ${CMAKE_CURRENT_BINARY_DIR}/Table.h
               )
 
   # link SqrtLibrary to tutorial_compiler_flags
@@ -57,3 +58,9 @@ endif()
 install(TARGETS ${installable_libs} DESTINATION lib)
 # install include headers
 install(FILES MathFunctions.h DESTINATION include)
+
+target_include_directories(SqrtLibrary PRIVATE
+                             ${CMAKE_CURRENT_BINARY_DIR}
+                             )
+
+ include(MakeTable.cmake)
