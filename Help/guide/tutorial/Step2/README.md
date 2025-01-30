@@ -1,5 +1,14 @@
 Step 2: Adding a Library
 
+Conclusao desse Step2 depois de terminar:
+Gostei da possibilidade de poder alterar quais bibliotecas secao linkadas e compiladas em uma opcao inicial na parte de config. Perem ficou bem confuso algumas funcoes de como adoicionar biblioteas e como lincar, porm a parte de id e ifdef ficou até claro.
+
+Perguntas minhas aqui>
+
+Pergunta no exercicio 1: Para mim nao ficou claro qual é diferenca entre o TODO 2 e o TODO 3. Eu achei que quando criavamos um nome global para bibliotecas como feito em TODO 1, poderiamos acessalas ou linca-las somente chamando pelo nome.
+Ou seja, somente podefia chamar add_subdirectory(MathFunctions) no Camkefile no folder pai. Parem alem disso chamamos target_link_libraries(Tutorial PUBLIC MathFunctions) que parece fazer exatamente a mesma coisa.
+Ficou a impressao que fazemos duas vezes a mesma coisa (lincamos duas vezes).
+
 At this point, we have seen how to create a basic project using CMake. In this step, we will learn how to create and use a library in our project. We will also see how to make the use of our library optional.
 Exercise 1 - Creating a Library
 
